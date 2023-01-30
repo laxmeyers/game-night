@@ -1,5 +1,5 @@
 import { appState } from "../AppState.js";
-import { Player } from "../Models/playersModel.js";
+import { getFormData } from "../Utils/FormHandler.js";
 
 
 
@@ -18,7 +18,11 @@ import { Player } from "../Models/playersModel.js";
 
     createPlayer(){
         window.event.preventDefault()
-        
+        const form = window.event.target
+
+        let playerData = getFormData(form)
+
+        this
     }
 
     constructor(){
