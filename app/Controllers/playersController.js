@@ -16,6 +16,11 @@ import { Player } from "../Models/playersModel.js";
         document.getElementById('players').innerHTML = names
     }
 
+    createPlayer(){
+        window.event.preventDefault()
+        
+    }
+
     constructor(){
         this.drawPlayers()
     }
