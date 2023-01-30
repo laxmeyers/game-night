@@ -1,4 +1,5 @@
 import { appState } from "../AppState.js";
+import { playersService } from "../Services/playersServices.js";
 import { getFormData } from "../Utils/FormHandler.js";
 
 
@@ -21,8 +22,8 @@ import { getFormData } from "../Utils/FormHandler.js";
         const form = window.event.target
 
         let playerData = getFormData(form)
-
-        this
+        playersService.createPlayer(playerData)
+        this.drawPlayers()
     }
 
     constructor(){
