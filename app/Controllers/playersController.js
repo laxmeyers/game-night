@@ -26,6 +26,16 @@ import { getFormData } from "../Utils/FormHandler.js";
         this.drawPlayers()
     }
 
+    playerScoreUp(name){
+        playersService.playerScoreUp(name)
+        this.drawPlayers()
+    }
+
+    playerScoreDown(name){
+        playersService.playerScoreDown(name)
+        this.drawPlayers()
+    }
+
     constructor(){
         this.drawPlayers()
     }
